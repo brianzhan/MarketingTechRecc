@@ -30,6 +30,69 @@
       <![endif]-->
    </head>
    <body id="page-top" class="index">
+
+      <style>
+         /* Popup container */
+         .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+         }
+
+         /* The actual popup (appears on top) */
+         .popup .popuptext {
+            visibility: hidden;
+            width: 600px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+         }
+
+         /* Popup arrow */
+         .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+         }
+
+         /* Toggle this class when clicking on the popup container (hide and show the popup) */
+         .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+         }
+
+         /* Add animation (fade in the popup) */
+         @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+         }
+
+         @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+         }
+
+      </style>
+      <script>
+          function popupFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+          }
+
+      </script>
       <!-- Navigation -->
       <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
          <div class="container">
@@ -230,7 +293,7 @@
                   <div class="filter1"></div>
                   <br>
                   <br>
-                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="freetrial">
                      <button class="btn btn-default" data-filter=".freetrial-yes">Yes</button>
                      <button class="btn btn-default" data-filter=".freetrial-no">No</button>
                   </div>
@@ -241,7 +304,7 @@
                   <div class="filter1"></div>
                   <br>
                   <br>
-                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="marketingmaturity">
                      <button class="btn btn-default" data-filter=".maturity-high">High</button>
                      <button class="btn btn-default" data-filter=".maturity-low">Low</button>
                   </div>
@@ -253,7 +316,7 @@
                   <div class="filter1"></div>
                   <br>
                   <br>
-                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="technical">
                      <button class="btn btn-default" data-filter=".integration-high">High</button>
                      <button class="btn btn-default" data-filter=".integration-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".integration-low">Low</button>
@@ -299,6 +362,12 @@
                      <p>Strictly tracking - does its job</p>
                   </div>
                </div>
+
+               <div class="popup" onclick="popupFunction()">Click me!
+                  <span class="popuptext" id="myPopup"><a href="http://www.marketo.com">Click here to get more info</a> <br> <a href="#">Others used this technology with Adobe Marketing Cloud. Click here to submit your stack & get in contact with these vendors</a></span>
+               </div>
+
+
                <script type="text/javascript">
                   // external js: isotope.pkgd.js
                   
