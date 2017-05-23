@@ -41,42 +41,32 @@
 
          /* The actual popup (appears on top) */
 
-         .container {
+         /* relevant styles */
+         .img_wrap {
             position: relative;
-            width: 50%;
+            height: 165px;
+            width:160px;
+
          }
 
-         .image {
-            display: block;
-            width: 100%;
-            height: auto;
-         }
-
-         .overlay {
+         .img_description {
             position: absolute;
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100%;
-            width: 100%;
+            background-color: whitesmoke;
+            color: black;
+            visibility: hidden;
             opacity: 0;
-            transition: .5s ease;
-            background-color: #008CBA;
+
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
          }
 
-         .container:hover .overlay {
+         .img_wrap:hover .img_description {
+            visibility: visible;
             opacity: 1;
-         }
-
-         .text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
          }
 
 
@@ -152,7 +142,8 @@
                   <label class="pull-left">Tracking: </label>
                   <div class="filter">
                   </div>
-                  <div class="btn-group" data-toggle="buttons" data-filter-group="tracking">
+                  <br>
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="tracking" style="margin-left:-70px">
                      <br>
                      <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
@@ -171,6 +162,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".cost-high">High</button>
                      <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".cost-low">Low</button>
@@ -183,6 +175,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="freetrial">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".freetrial-yes">Yes</button>
                      <button class="btn btn-default" data-filter=".freetrial-no">No</button>
                   </div>
@@ -194,6 +187,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="marketingmaturity">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".maturity-high">High</button>
                      <button class="btn btn-default" data-filter=".maturity-low">Low</button>
                   </div>
@@ -206,6 +200,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="technical">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".integration-high">High</button>
                      <button class="btn btn-default" data-filter=".integration-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".integration-low">Low</button>
@@ -218,42 +213,61 @@
                <br> 
                <br>
                <div id="isotope-container">
-                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead">
+                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead freetrial-yes">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
-                     <img src="./images/marketo.jpg" height=150 width=150 class="image">
-
-                     <!--<div class="overlay">-->
-                        <!--<div class="text">Hello World</div>-->
-                     <!--</div>-->
-
+                     <div class="img_wrap">
+                        <img src="./images/marketo.jpg" height=150 width=150 class="image">
+                        <p class="img_description"><a href="./companies/Marketo.html">Click here to learn more.</a></p>
+                     </div>
                      <h3>Marketo</h3>
                      <p>High cost, high reward</p>
                   </div>
+
                   <div class="col-sm-3 item tracking-website tracking-ab tracking-activity contact email">
-                     <img src="./images/acton.png" height=150 width=150>
-                     <h3>Act-On</h3>
-                     <p>Easy to learn, limited functionality</p>
+                     <div class="img_wrap">
+                        <img src="./images/acton.png" height=150 width=150 class="image">
+                        <p class="img_description">Click here to learn more.</p>
+                     </div>
+                        <h3>Act-On</h3>
+                        <p>Easy to learn, limited functionality</p>
+
                   </div>
+
                   <div class="col-sm-3 item tracking-realtime tracking-leads tracking-video tracking-website multi email">
-                     <img src="./images/buzzbuilder.jpg" height=150 width=150>
+                     <div class="img_wrap">
+                        <img src="./images/buzzbuilder.jpg" height=150 width=150 class="image">
+                        <p class="img_description">Click here to learn more.</p>
+                     </div>
                      <h3>BuzzBuilder</h3>
                      <p>The in-between option</p>
                   </div>
+
                   <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity channel email">
-                     <img src="./images/leadsius.png" height=150 width=150>
+                     <div class="img_wrap">
+                        <img src="./images/leadsius.png" height=150 width=150 class="image">
+                        <p class="img_description">Click here to learn more.</p>
+                     </div>
                      <h3>Leadsius</h3>
                      <p>On-demand model means useful sophistication</p>
                   </div>
                   <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity tracking-conversion tracking-leads tracking-realtime channel lead multi email">
-                     <img src="./images/salesfusion.png" height=150 width=150>
+                     <div class="img_wrap">
+                        <img src="./images/salesfusion.png" height=150 width=150 class="image">
+                        <p class="img_description">Click here to learn more.</p>
+                     </div>
                      <h3>Salesfusion</h3>
                      <p>The Salesforce option</p>
                   </div>
+
                   <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity tracking-conversion tracking-leads tracking-realtime lead">
-                     <img src="./images/barometric.jpg" height=150 width=150>
+                     <div class="img_wrap">
+                        <img src="./images/barometric.jpg" height=150 width=150 class="image">
+                        <p class="img_description">Click here to learn more.</p>
+                     </div>
                      <h3>Barometric</h3>
                      <p>Strictly tracking - does its job</p>
                   </div>
+
                </div>
                <script type="text/javascript">
                   // external js: isotope.pkgd.js
@@ -303,7 +317,7 @@
             </div>
          </div>
       </section>
-     
+
 
       <footer>
          <div class="container">
