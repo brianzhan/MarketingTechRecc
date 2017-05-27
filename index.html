@@ -69,6 +69,15 @@
             opacity: 1;
          }
 
+         .arrow-right {
+           width: 0; 
+           height: 0; 
+           border-top: 60px solid transparent;
+           border-bottom: 60px solid transparent;
+           
+           border-left: 60px solid yellow;
+         }
+
 
 
          /* Add animation (fade in the popup) */
@@ -103,7 +112,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
-                  <li class="hidden">
+               <!--    <li class="hidden">
                      <a href="#page-top"></a>
                   </li>
                   <li>
@@ -117,7 +126,7 @@
                   </li>
                   <li>
                      <a class="page-scroll" href="#team">Insights</a>
-                  </li>
+                  </li> -->
                </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -128,9 +137,15 @@
       <header>
          <div class="container">
             <div class="intro-text">
-               <div class="intro-lead-in">Welcome To Start Marketing!</div>
-               <div class="intro-heading">It's Nice To Meet You</div>
+               <div class="intro-heading" style="font-size: 35px">
+                  Tracking<span class="arrow-right"></span>
+                  Lead Generation <span class="arrow-right"></span>
+                  Analytics 
+               </div>
+
                <a href="#services" class="page-scroll btn btn-xl">Let's Get Started!</a>
+               
+
             </div>
          </div>
       </header>
@@ -138,51 +153,10 @@
       <section id="services">
          <div class="container">
             <div class="row">
-               <div class="filters">
-                  <label class="pull-left">Tracking: </label>
-                  <div class="filter">
-                  </div>
-                  <br>
-                  <div class="btn-group" data-toggle="buttons" data-filter-group="tracking" style="margin-left:-70px">
-                     <br>
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
-                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
-                     <button class="btn btn-default" data-filter=".tracking-visitor">Visitor Tracking</button>
-                     <button class="btn btn-default" data-filter=".tracking-video">Video Tracking</button>
-                     <button class="btn btn-default" data-filter=".tracking-conversion">Conversion Tracking</button>
-                     <!--<button class="btn btn-default" data-filter=".tracking-leads">Leads Tracking</button>-->
-                     <button class="btn btn-default" data-filter=".tracking-ab">A/B Testing</button>
-                     <!--<button class="btn btn-default" data-filter=".tracking-activity">Activity Monitoring</button>-->
-                     <button class="btn btn-default" data-filter=".tracking-realtime">Real Time Tracking</button>
-                  </div>
-                  <br>
-                  <br>
-                  <label class="pull-left">Cost: </label>
-                  <div class="filter1"></div>
-                  <br>
-                  <br>
-                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
-                     <button class="btn btn-default" data-filter=".cost-high">High</button>
-                     <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
-                     <button class="btn btn-default" data-filter=".cost-low">Low</button>
-                  </div>
 
-                  <br>
-                  <br>
-                  <label class="pull-left">Free Trial: </label>
-                  <div class="filter1"></div>
-                  <br>
-                  <br>
-                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="freetrial">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
-                     <button class="btn btn-default" data-filter=".freetrial-yes">Yes</button>
-                     <button class="btn btn-default" data-filter=".freetrial-no">No</button>
-                  </div>
-
-                  <br>
-                  <br>
-                  <label class="pull-left">Marketing Process Maturity Needed Before Implementation: </label>
+               <!-- FIRST SECTION: QUESTIONS ABOUT YOUR ORGANIZATION  -->
+               <div class="pull-left" style="font-size:30px">Questions about your organization</div><br><br><br>
+               <label class="pull-left">How mature are the marketing processes within your organization? Some tools assume your organization already processes</label>
                   <div class="filter1"></div>
                   <br>
                   <br>
@@ -195,7 +169,7 @@
 
                   <br>
                   <br>
-                  <label class="pull-left">Technical Expertise Required to Integrate: </label>
+                  <label class="pull-left">How much tecnical expertise can be dedicated to integration? The latest tools can be difficult to integrate, but would be rewarding</label>
                   <div class="filter1"></div>
                   <br>
                   <br>
@@ -205,7 +179,101 @@
                      <button class="btn btn-default" data-filter=".integration-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".integration-low">Low</button>
                   </div>
+                  <br>
+                  <br>
 
+                  <label class="pull-left">Is it critical that your organization has a free trial prior to purchasing the technology? </label>
+                  <div class="filter1"></div>
+                  <br>
+                  <br>
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="freetrial">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default" data-filter=".freetrial-yes">Yes</button>
+                     <button class="btn btn-default" data-filter=".freetrial-no">No</button>
+                  </div> <br><br><br><br>
+
+
+
+
+
+               <!-- SECOND QUESTION: QUESTIONS ABOUT CATEGORY/COST -->   
+               <div class="pull-left" style="font-size:30px">Questions about the technology you desire</div><br><br><br>
+
+               <div class="filters">
+
+
+                  <label class="pull-left">Cost: </label>
+                  <div class="filter1"></div>
+                  <br>
+                  <br>
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default" data-filter=".cost-high">High</button>
+                     <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
+                     <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                  </div>
+                  <br><br>
+
+
+
+                  <label class="pull-left">Tracking: </label>
+                  <div class="filter">
+                  </div>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="tracking" style="margin-left:-60px">
+                     <br>
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".tracking-visitor">Visitor Tracking</button>
+                     <button class="btn btn-default" data-filter=".tracking-video">Video Tracking</button>
+                     <button class="btn btn-default" data-filter=".tracking-conversion">Conversion Tracking</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-leads">Leads Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".tracking-ab">A/B Testing</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-activity">Activity Monitoring</button>-->
+                     <button class="btn btn-default" data-filter=".tracking-realtime">Real Time Tracking</button>
+                  </div>
+                  <br><br>
+
+                  <label class="pull-left">Lead Generation: </label>
+                  <div class="filter">
+                  </div>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="lead-generation" style="margin-left:-110px">
+                     <br>
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".lead-nurturing">Lead Nurturing</button>
+                     <button class="btn btn-default" data-filter=".lead-generation">Lead Generation</button>
+                     <button class="btn btn-default" data-filter=".lead-scoring">Lead Scoring</button>
+                     <button class="btn btn-default" data-filter=".lead-response">Lead Response</button>
+                  </div>
+                  <br><br>
+
+                  <label class="pull-left">Analytics: </label>
+                  <div class="filter">
+                  </div>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="analytics" style="margin-left:-70px">
+                     <br>
+                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked" data-filter="crm">CRM Integration</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".roi">ROI</button>
+                     <button class="btn btn-default" data-filter=".marketing-analysis">Marketing Analysis</button>
+                     <button class="btn btn-default" data-filter=".email-marketing">Email Marketing</button>
+                     <button class="btn btn-default" data-filter=".campaign-optimization">Campaign Optimization</button>
+                     <button class="btn btn-default" data-filter=".budget-reporting">Budgeting Reporting</button>
+                     <button class="btn btn-default" data-filter=".segmentation">Segmentation</button>
+                  </div>
+
+
+
+
+
+                  
+
+                  
+                  
 
 
 
