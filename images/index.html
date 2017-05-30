@@ -33,22 +33,17 @@
 
       <style>
          /* Popup container */
-
          /* inline styling is not mainstream enough */
          /*a:hover {*/
             /*background-color: yellow;*/
          /*}*/
-
          /* The actual popup (appears on top) */
-
          /* relevant styles */
          .img_wrap {
             position: relative;
             height: 165px;
             width:160px;
-
          }
-
          .img_description {
             position: absolute;
             top: 0;
@@ -59,16 +54,13 @@
             color: black;
             visibility: hidden;
             opacity: 0;
-
             /* transition effect. not necessary */
             transition: opacity .2s, visibility .2s;
          }
-
          .img_wrap:hover .img_description {
             visibility: visible;
             opacity: 1;
          }
-
          .arrow-right {
            width: 0; 
            height: 0; 
@@ -77,27 +69,21 @@
            
            border-left: 60px solid yellow;
          }
-
-
-
          /* Add animation (fade in the popup) */
          @-webkit-keyframes fadeIn {
             from {opacity: 0;}
             to {opacity: 1;}
          }
-
          @keyframes fadeIn {
             from {opacity: 0;}
             to {opacity:1 ;}
          }
-
       </style>
       <script>
           function popupFunction() {
               var popup = document.getElementById("myPopup");
               popup.classList.toggle("show");
           }
-
       </script>
       <!-- Navigation -->
       <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -163,7 +149,7 @@
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="marketingmaturity">
                      <button class="btn btn-default is-checked" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".maturity-diff">Difficult</button>
-                     <button class="btn btn-default" data-filter=".maturity-esay">Easy to use</button>
+                     <button class="btn btn-default" data-filter=".maturity-esay">Esay to use</button>
                   </div>
 
 
@@ -282,7 +268,7 @@
                <br> 
                <br>
                <div id="isotope-container">
-                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes">
+                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads cost-high maturity-diff freetrial-yes">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
                      <div class="img_wrap">
                         <img src="./images/marketo.jpg" height=150 width=150 class="image">
@@ -292,7 +278,7 @@
                      <p>High cost, high reward</p>
                   </div>
 
-                  <div class="col-sm-3 item tracking-website tracking-ab tracking-activity contact email cost-high maturity-easy freetrial-no">
+                  <div class="col-sm-3 item tracking-website tracking-ab tracking-activity cost-high maturity-easy freetrial-no">
                      <div class="img_wrap">
                         <img src="./images/acton.png" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -302,7 +288,7 @@
 
                   </div>
 
-                  <div class="col-sm-3 item tracking-realtime tracking-leads tracking-video tracking-website multi email cost-medium maturity-easy freetrial-no">
+                  <div class="col-sm-3 item tracking-realtime tracking-leads tracking-video tracking-website cost-medium maturity-easy freetrial-no">
                      <div class="img_wrap">
                         <img src="./images/buzzbuilder.jpg" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -311,7 +297,7 @@
                      <p>The in-between option</p>
                   </div>
 
-                  <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity channel email cost-low maturity-easy freetrial-yes">
+                  <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity cost-low maturity-easy freetrial-yes">
                      <div class="img_wrap">
                         <img src="./images/leadsius.png" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -319,7 +305,8 @@
                      <h3>Leadsius</h3>
                      <p>On-demand model means useful sophistication</p>
                   </div>
-                  <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity tracking-conversion tracking-leads tracking-realtime channel lead multi email cost-medium maturity-easy freetrial-no">
+                   
+                  <div class="col-sm-3 item tracking-visitor tracking-website tracking-activity tracking-conversion tracking-leads tracking-realtime cost-medium maturity-easy freetrial-no">
                      <div class="img_wrap">
                         <img src="./images/salesfusion.png" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -346,7 +333,7 @@
                      <p>An all-in-one marketing platform. Save time and money using their enterprise level functionality that has been designed for ease of use.</p>
                   </div>
                    
-                  <div class="col-sm-3 item tracking-conversion tracking-ab cost-medium maturity-easy freetrial-yes">
+                  <div class="col-sm-3 item tracking-conversion cost-medium maturity-easy freetrial-yes">
                      <div class="img_wrap">
                         <img src="./images/Customerio.png" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -406,7 +393,7 @@
                         <p class="img_description">Click here to learn more.</p>
                      </div>
                      <h3>GreenRope</h3>
-                     <p>GreenRope is a complete CRM, marketing automation, and more. Integrated software that consolidates and simplifies the sales, marketing and operations of your organization.</p>
+                     <p>GreenRope is a complete CRM, marketing automation, and more. Integrated software that consolidates & simplifies your organization's sales, marketing and operations.</p>
                   </div>
                    
                   <div class="col-sm-3 item tracking-visitor tracking-website cost-low maturity-diff freetrial-yes">
@@ -417,7 +404,7 @@
                      <h3>Zoho</h3>
                      <p>Zoho CRM helps you to attract, retain, delight customers and grow your company into a customer-focused organization.</p>
                   </div>
-
+                    
                </div>
                <script type="text/javascript">
                   // external js: isotope.pkgd.js
