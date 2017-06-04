@@ -161,7 +161,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="marketingmaturity">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".maturity-diff">Difficult</button>
                      <button class="btn btn-default" data-filter=".maturity-esay">Easy to use</button>
                   </div>
@@ -174,7 +174,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="technical">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".integration-high">High</button>
                      <button class="btn btn-default" data-filter=".integration-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".integration-low">Low</button>
@@ -187,7 +187,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="freetrial">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".freetrial-yes">Yes</button>
                      <button class="btn btn-default" data-filter=".freetrial-no">No</button>
                   </div> <br><br><br>
@@ -212,7 +212,7 @@
                   <br>
                   <br>
                   <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <button class="btn btn-default" data-filter=".cost-high">High</button>
                      <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
                      <button class="btn btn-default" data-filter=".cost-low">Low</button>
@@ -227,7 +227,7 @@
                   <br>
                   <div class="btn-group" data-toggle="buttons" data-filter-group="tracking" style="margin-left:-60px">
                      <br>
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
                      <button class="btn btn-default" data-filter=".tracking-visitor">Visitor Tracking</button>
                      <button class="btn btn-default" data-filter=".tracking-video">Video Tracking</button>
@@ -246,7 +246,7 @@
                   <br>
                   <div class="btn-group" data-toggle="buttons" data-filter-group="lead-generation" style="margin-left:-110px">
                      <br>
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
                      <button class="btn btn-default" data-filter=".lead-nurturing">Lead Nurturing</button>
                      <button class="btn btn-default" data-filter=".lead-generation">Lead Generation</button>
@@ -261,7 +261,7 @@
                   <br>
                   <div class="btn-group" data-toggle="buttons" data-filter-group="analytics" style="margin-left:-70px">
                      <br>
-                     <button class="btn btn-default is-checked" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
                      <button class="btn btn-default is-checked" data-filter="crm">CRM Integration</button>
                      <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
                      <button class="btn btn-default" data-filter=".roi">ROI</button>
@@ -278,7 +278,7 @@
                <br> 
                <br>
                <div id="isotope-container">
-                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes">
+                  <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes lead-nurturing crm">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
                      <div class="img_wrap">
                         <img src="./images/marketo.jpg" height=150 width=150 class="image">
@@ -288,7 +288,7 @@
                      <p>High cost, high reward</p>
                   </div>
 
-                  <div class="col-sm-3 item tracking-website tracking-ab tracking-activity contact email cost-high maturity-easy freetrial-no">
+                  <div class="col-sm-3 item tracking-website tracking-ab tracking-activity contact email cost-high maturity-easy freetrial-no tracking-visitor lead-nurturing">
                      <div class="img_wrap">
                         <img src="./images/acton.png" height=150 width=150 class="image">
                         <p class="img_description">Click here to learn more.</p>
@@ -446,7 +446,9 @@
                     var $buttonGroup = $( buttonGroup );
                     $buttonGroup.on( 'click', 'button', function() {
                       $buttonGroup.find('.is-checked').removeClass('is-checked');
+                      $buttonGroup.find('.active').removeClass('active');
                       $( this ).addClass('is-checked');
+                      $( this ).addClass('active');
                     });
                   });
                     
