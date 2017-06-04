@@ -192,17 +192,29 @@
                      <button class="btn btn-default" data-filter=".freetrial-no">No</button>
                   </div> 
                   <br><br>
-                  <label class="pull-left">Cost: </label>
-                     <div class="filter1"></div>
-                     <br>
-                     <br>
-                     <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
-                        <button class="btn btn-default is-checked active" data-filter="">Any</button>
-                        <button class="btn btn-default" data-filter=".cost-high">High</button>
-                        <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
-                        <button class="btn btn-default" data-filter=".cost-low">Low</button>
+
+                  <label class="pull-left">Would you like to only show tools that work well with previously selected ones? </label>
+                  <div class="filter1"></div>
+                  <br>
+                  <br>
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="work-well">
+                     <button class="btn btn-default is-checked active" data-filter=".work-well-yes">Yes</button>
+                     <button class="btn btn-default" data-filter=".work-well-no">No</button>
+                  </div>
+                  <br><br>
+
+                  <label class="pull-left">List tools part of your existing stack you'd like search results to integrate well with</label>
+                  <br><br>
+                  <div class="col-lg-3" style="padding-left:0px;">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-secondary" type="button">Enter!</button>
+                        </span>
                      </div>
-                     <br><br>
+                  </div>
+                  <br><br>
+
 
 
                   <a href="#tracking-section" class="page-scroll btn btn-xl">Questions About the Tracking Tool</a>
@@ -237,12 +249,23 @@
                         <button class="btn btn-default" data-filter=".tracking-realtime">Real Time Tracking</button>
                         <button class="btn btn-default" data-filter=".tracking-email">Email Tracking</button>
                      </div>
+                     <br><br>
+                     <label class="pull-left">How large of a budget is your organization able to set aside for this tool?</label>
+                     <div class="filter1"></div>
+                     <br><br>
+
+                     <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                        <button class="btn btn-default is-checked active" data-filter="">Any</button>
+                        <button class="btn btn-default" data-filter=".cost-high">High</button>
+                        <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
+                        <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                     </div>
                 </section>
 
                <!-- Proceed to See Bullshit -->
                <!-- This shit is more disgusting than Donald Trump -->
                <!-- Kristian flip-flops more than Trump -->
-               <div id="isotope-container">
+               <div class="isotope-container">
                   <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes lead-nurturing crm">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
                      <div class="img_wrap">
@@ -388,20 +411,35 @@
 
 
                <section id="lead-gen" style="padding-top: 50px; padding-bottom: 50px;">
-                     
+                  <span class="pull-left" style="font-size:30px"> Questions about your lead generation tool &nbsp </span>
+                  <a href="#analytics" class="page-scroll btn btn-xl">Proceed to Choose Your Analytics Tool</a>
+                  <br><br>
+                  <label class="pull-left">Tracking: </label>
+                  <div class="filter"></div>
 
-                     <label class="pull-left">Lead Generation: </label>
-                     <div class="filter"></div>
+                  <div class="filter"></div>
+                  <br>
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="lead-generation" style="display:block;">
                      <br>
-                     <div class="btn-group" data-toggle="buttons" data-filter-group="lead-generation" style="margin-left:-110px">
-                        <br>
-                        <button class="btn btn-default is-checked active" data-filter="">Any</button>
-                        <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
-                        <button class="btn btn-default" data-filter=".lead-nurturing">Lead Nurturing</button>
-                        <button class="btn btn-default" data-filter=".lead-generation">Lead Generation</button>
-                        <button class="btn btn-default" data-filter=".lead-scoring">Lead Scoring</button>
-                        <button class="btn btn-default" data-filter=".lead-response">Lead Response</button>
-                     </div>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".lead-nurturing">Lead Nurturing</button>
+                     <button class="btn btn-default" data-filter=".lead-generation">Lead Generation</button>
+                     <button class="btn btn-default" data-filter=".lead-scoring">Lead Scoring</button>
+                     <button class="btn btn-default" data-filter=".lead-response">Lead Response</button>
+                  </div>
+                  <br><br><br>
+
+                  <label class="pull-left">How large of a budget is your organization able to set aside for this tool?</label>
+                  <div class="filter1"></div>
+                  <br><br>
+
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
+                     <button class="btn btn-default" data-filter=".cost-high">High</button>
+                     <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
+                     <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                  </div>
                </section>
 
 
@@ -410,7 +448,7 @@
                <!-- Proceed to See Bullshit -->
                <!-- This shit is more disgusting than Donald Trump -->
                <!-- Kristian flip-flops more than Trump -->
-               <div id="isotope-container">
+               <div class="isotope-container">
                   <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes lead-nurturing crm">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
                      <div class="img_wrap">
@@ -556,27 +594,47 @@
 
                <section id="analytics" style="padding-top: 50px; padding-bottom: 50px;">
 
-                     <label class="pull-left">Analytics: </label>
-                     <div class="filter"></div>
+                  <span class="pull-left" style="font-size:30px"> Questions about your analytics tool &nbsp </span>
+                  <br><br>
+                  <div class="filter"></div>
+                  <br>
+                  <label class="pull-left">Analytics Categories Desired</label>
+                  <div class="filter1"></div>
+                  <br>
+                  <br>
+
+                  <div class="btn-group" data-toggle="buttons" data-filter-group="analytics" style="display: block">
                      <br>
-                     <div class="btn-group" data-toggle="buttons" data-filter-group="analytics" style="margin-left:-70px">
-                        <br>
-                        <button class="btn btn-default is-checked active" data-filter="">Any</button>
-                        <button class="btn btn-default is-checked" data-filter="crm">CRM Integration</button>
-                        <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
-                        <button class="btn btn-default" data-filter=".roi">ROI</button>
-                        <button class="btn btn-default" data-filter=".marketing-analysis">Marketing Analysis</button>
-                        <button class="btn btn-default" data-filter=".email-marketing">Email Marketing</button>
-                        <button class="btn btn-default" data-filter=".campaign-optimization">Campaign Optimization</button>
-                        <button class="btn btn-default" data-filter=".budget-reporting">Budgeting Reporting</button>
-                        <button class="btn btn-default" data-filter=".segmentation">Segmentation</button>
-                     </div>
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
+                     <button class="btn btn-default is-checked" data-filter="crm">CRM Integration</button>
+                     <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                     <button class="btn btn-default" data-filter=".roi">ROI</button>
+                     <button class="btn btn-default" data-filter=".marketing-analysis">Marketing Analysis</button>
+                     <button class="btn btn-default" data-filter=".email-marketing">Email Marketing</button>
+                     <button class="btn btn-default" data-filter=".campaign-optimization">Campaign Optimization</button>
+                     <button class="btn btn-default" data-filter=".budget-reporting">Budgeting Reporting</button>
+                     <button class="btn btn-default" data-filter=".segmentation">Segmentation</button>
+                  </div>
+
+                  <br><br><br>
+
+                  <label class="pull-left">How large of a budget is your organization able to set aside for this tool?</label>
+                  <div class="filter1"></div>
+                  <br><br>
+
+                  <div class="btn-group is-checked" data-toggle="buttons" data-filter-group="Cost">
+                     <button class="btn btn-default is-checked active" data-filter="">Any</button>
+                     <button class="btn btn-default" data-filter=".cost-high">High</button>
+                     <button class="btn btn-default" data-filter=".cost-medium">Medium</button>
+                     <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                  </div>
+
                </section>
 
                <!-- Proceed to See Bullshit -->
                <!-- This shit is more disgusting than Donald Trump -->
                <!-- Kristian flip-flops more than Trump -->
-               <div id="isotope-container">
+               <div class="isotope-container">
                   <div class="col-sm-3 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes lead-nurturing crm">
                      <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
                      <div class="img_wrap">
@@ -714,21 +772,13 @@
                   </div>
 
                <br><br>
-
-
-
-
-
-               
-
-
-
+                  
 
                <script type="text/javascript">
                   // external js: isotope.pkgd.js
                   
                     // init Isotope
-                    var $container = $('#isotope-container').isotope({
+                    var $container = $('.isotope-container').isotope({
                       transitionDuration: '1s',
                       itemSelector: '.item'
                         //layoutMode: 'fitRows'
@@ -771,6 +821,8 @@
                   }
                   
                </script>
+
+            </div>
             </div>
          </div>
       </section>

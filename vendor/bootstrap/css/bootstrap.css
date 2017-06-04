@@ -2506,7 +2506,6 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 label {
-  display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold;
@@ -3645,7 +3644,6 @@ tbody.collapse.in {
 .btn-group,
 .btn-group-vertical {
   position: relative;
-  display: inline-block;
   vertical-align: middle;
 }
 .btn-group > .btn,
