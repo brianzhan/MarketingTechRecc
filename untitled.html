@@ -143,7 +143,7 @@
                 </div><br>
                 <br>
                 <br>
-                
+                <a class="page-scroll btn btn-xl" href="#tracking-section">Skip to: Questions About Tracking</a><br>
                 <br>
                 <br>
                 <label class="pull-left">How familiar is your staff with the use of marketing technology?</label>
@@ -171,15 +171,133 @@
                 <label class="pull-left">Are there any tools that are currently part of your existing marketing stack? List them here.</label><br>
                 <br>
                 <div class="col-lg-3" style="padding-left:0px;">
-                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                          <button class="btn btn-secondary" type="button">Enter!</button>
-                        </span>
-                     </div>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Search for..." type="text"> <span class="input-group-btn"><button class="btn btn-secondary" type="button"><span class="input-group-btn"><span class="input-group-btn">Enter!</span></span></button></span>
+                    </div>
                 </div><br>
                 <br>
-                <script type="text/javascript">
+                <section id="tracking-section" style="padding-top: 50px; padding-bottom: 50px;">
+                    <!-- SECOND QUESTION: QUESTIONS ABOUT CATEGORY/COST -->
+                    <div class="pull-left" style="font-size:30px">
+                        Tracking
+                    </div><br>
+                    <br>
+                    <br>
+                    <a class="page-scroll btn btn-xl" href="#leadgen-section">Skip to: Questions About Lead Generation</a><br>
+                    <br>
+                    <br>
+                    <div class="filters">
+                        <label class="pull-left">How large a budget is your team willing to set aside for a tracking tool?</label>
+                        <div class="filter1"></div><br>
+                        <br>
+                        <div class="btn-group is-checked" data-filter-group="Cost" data-toggle="buttons">
+                            <button class="btn btn-default is-checked active" data-filter="">Any</button> <button class="btn btn-default" data-filter=".cost-high">High</button> <button class="btn btn-default" data-filter=".cost-medium">Medium</button> <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                        </div><br>
+                        <br>
+                        <label class="pull-left">Tracking:</label>
+                        <div class="filter"></div><br>
+                        <div class="btn-group" data-filter-group="tracking" data-toggle="buttons" style="margin-left:-60px">
+                            <br>
+                            <button class="btn btn-default is-checked active" data-filter="">Any</button> <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                             <button class="btn btn-default" data-filter=".tracking-visitor">Visitor Tracking</button> <button class="btn btn-default" data-filter=".tracking-video">Video Tracking</button> <button class="btn btn-default" data-filter=".tracking-conversion">Conversion Tracking</button> <!--<button class="btn btn-default" data-filter=".tracking-leads">Leads Tracking</button>-->
+                             <button class="btn btn-default" data-filter=".tracking-ab">A/B Testing</button> <!--<button class="btn btn-default" data-filter=".tracking-activity">Activity Monitoring</button>-->
+                             <button class="btn btn-default" data-filter=".tracking-realtime">Real Time Tracking</button> <button class="btn btn-default" data-filter=".tracking-email">Email Tracking</button>
+                        </div><br>
+                        <br>
+                    </div><br>
+                <br>
+                <div id="isotope-container">
+                    <div class="col-sm-4 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes">
+                        <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/marketo.jpg" width="150">
+                            <p class="img_description"><a href="./companies/Marketo.html">Click here to learn more.</a></p>
+                        </div>
+                        <h3>Marketo</h3>
+                        <p>High cost, high reward</p>
+                    </div>
+                    <div class="col-sm-4 item tracking-website tracking-ab tracking-activity contact email cost-high maturity-easy freetrial-no">
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/acton.png" width="150">
+                            <p class="img_description">Click here to learn more.</p>
+                        </div>
+                        <h3>Act-On</h3>
+                        <p>Easy to learn, limited functionality</p>
+                    </div>
+                    <div class="col-sm-4 item tracking-realtime tracking-leads tracking-video tracking-website multi email cost-medium maturity-easy freetrial-no">
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/buzzbuilder.jpg" width="150">
+                            <p class="img_description">Click here to learn more.</p>
+                        </div>
+                        <h3>BuzzBuilder</h3>
+                        <p>The in-between option</p>
+                    </div>
+
+                </div>
+                </section>
+
+                <section id="leadgen-section" style="padding-top: 50px; padding-bottom: 50px;">
+                    <!-- SECOND QUESTION: QUESTIONS ABOUT CATEGORY/COST -->
+                    <div class="pull-left" style="font-size:30px">
+                        Lead Generation
+                    </div><br>
+                    <br>
+                    <br>
+                    <a class="page-scroll btn btn-xl" href="#leadgen-section">Skip to: Questions About Analytics</a><br>
+                    <br>
+                    <br>
+                    <div class="filters1">
+                        <label class="pull-left">How large a budget is your team willing to set aside for a lead generation tool?</label>
+                        <div class="filter1"></div><br>
+                        <br>
+                        <div class="btn-group is-checked" data-filter-group="Cost" data-toggle="buttons">
+                            <button class="btn btn-default is-checked active" data-filter="">Any</button> <button class="btn btn-default" data-filter=".cost-high">High</button> <button class="btn btn-default" data-filter=".cost-medium">Medium</button> <button class="btn btn-default" data-filter=".cost-low">Low</button>
+                        </div><br>
+                        <br>
+                        <br>
+                        <label class="pull-left">Types of Lead Generation</label>
+                        <div class="filter"></div><br>
+                        <div class="btn-group" data-filter-group="lead-generation" data-toggle="buttons" style="display:block;">
+                            <br>
+                            <button class="btn btn-default is-checked active" data-filter="">Any</button> <!--<button class="btn btn-default" data-filter=".tracking-website">Visitor Tracking</button>-->
+                             <button class="btn btn-default" data-filter=".lead-nurturing">Lead Nurturing</button> <button class="btn btn-default" data-filter=".lead-generation">Lead Generation</button> <button class="btn btn-default" data-filter=".lead-scoring">Lead Scoring</button> <button class="btn btn-default" data-filter=".lead-response">Lead Response</button>
+                        </div><br>
+                        <br>
+                    </div>
+                </section>
+                </div>
+                <div id="isotope-container1">
+                    <div class="col-sm-4 item tracking-website tracking-conversion tracking-visitor tracking-leads email contact channel lead cost-high maturity-diff freetrial-yes freetrial-yes">
+                        <!--<a href="https://www.marketo.com/" STYLE="text-decoration:none" target="_blank">-->
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/marketo.jpg" width="150">
+                            <p class="img_description"><a href="./companies/Marketo.html">Click here to learn more.</a></p>
+                        </div>
+                        <h3>Marketo</h3>
+                        <p>High cost, high reward</p>
+                    </div>
+                    <div class="col-sm-4 item tracking-website tracking-ab tracking-activity contact email cost-high maturity-easy freetrial-no">
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/acton.png" width="150">
+                            <p class="img_description">Click here to learn more.</p>
+                        </div>
+                        <h3>Act-On</h3>
+                        <p>Easy to learn, limited functionality</p>
+                    </div>
+                    <div class="col-sm-4 item tracking-realtime tracking-leads tracking-video tracking-website multi email cost-medium maturity-easy freetrial-no">
+                        <div class="img_wrap">
+                            <img class="image" height="150" src="./images/buzzbuilder.jpg" width="150">
+                            <p class="img_description">Click here to learn more.</p>
+                        </div>
+                        <h3>BuzzBuilder</h3>
+                        <p>The in-between option</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <br>
+    <script type="text/javascript">
                   // external js: isotope.pkgd.js
                   
                     // init Isotope
@@ -225,18 +343,64 @@
                     return value;
                   }
                   
-               </script>
-
+    </script> 
+    <script type="text/javascript">
+                  // external js: isotope.pkgd.js
+                  
+                    // init Isotope
+                    var $container = $('#isotope-container1').isotope({
+                      transitionDuration: '1s',
+                      itemSelector: '.item'
+                        //layoutMode: 'fitRows'
+                    });
+                  
+                  // store filter for each group
+                  var filters = {};
+                  
+                  $('.filters1').on( 'click', '.btn', function() {
+                    var $this = $(this);
+                    // get group key
+                    var $buttonGroup = $this.parents('.btn-group');
+                    var filterGroup = $buttonGroup.attr('data-filter-group');
+                    // set filter for group
+                    filters[ filterGroup ] = $this.attr('data-filter');
+                    // combine filters
+                    var filterValue = concatValues( filters );
+                    // set filter for Isotope
+                    $container.isotope({ filter: filterValue });
+                  });
+                  
+                  // change is-checked class on buttons
+                  $('.btn-group').each( function( i, buttonGroup ) {
+                    var $buttonGroup = $( buttonGroup );
+                    $buttonGroup.on( 'click', 'button', function() {
+                      $buttonGroup.find('.is-checked').removeClass('is-checked');
+                      $buttonGroup.find('.active').removeClass('active');
+                      $( this ).addClass('is-checked');
+                      $( this ).addClass('active');
+                    });
+                  });
+                    
+                  // flatten object by concatting values
+                  function concatValues( obj ) {
+                    var value = '';
+                    for ( var prop in obj ) {
+                      value += obj[ prop ];
+                    }
+                    return value;
+                  }
+                  
+    </script>
     <section id="results" style="padding-top: 50px; padding-bottom: 50px;">
         <div class="container">
             <div class="row">
                 <!-- FIRST SECTION: QUESTIONS ABOUT YOUR ORGANIZATION  -->
                 <div class="pull-left" style="font-size:30px">
-                 Next Step
+                    Results
                 </div><br>
                 <br>
                 <br>
-                <a class="page-scroll btn btn-xl" href="./tracking.html">Go to Tracking</a>
+                <a class="page-scroll btn btn-xl" href="./myrec.html">See Results</a>
             </div>
         </div>
     </section>
